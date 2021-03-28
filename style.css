@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.circle-logo {
+    background-color: #3F3D56;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-logo a {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+
+.circle-logo h2{
+    font-size: 22px;
+    color:white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 20%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 13px;
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.main-wrapper {
+    padding-top: 120px ;
+    height: 700px;
+    text-align: center;
+}
+
+.main-image {
+    width: 75%;
+    margin-top: 150px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    z-index: -5;
+}
+
+.main {
+    display: inline-block;
+}
+
+.content-wrapper {
+    text-align: center;
+    height: 700px;
+    padding-top: 100px;
+    background-color: #E5E5E5;
+}
+
+.article {
+    width: 35%;
+    height: 180px;
+    background-color: #3F3D56;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3), 8px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article:hover {
+    transform: scale(1.05);
+    
+    transition: all 0.5s;
+    background-color: #FF3B62;
+}
+
+.article-logo {
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.article-text {
+    float: right;
+}
+
+.article h4 {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.article-text p {
+    font-size: 10px;
+    width: 240px;
+    text-align: left;
+    margin-top: 3px;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+.about-wrapper {
+    text-align: center;
+    height: 600px;
+    padding-top: 100px;
+}
+
+.heading {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.profile {
+    display: inline-block;
+    background-color: #3F3D56;
+    color: white;
+    border-radius: 35px;
+    width: 190px;
+    height: 280px;
+    margin-right: 30px;
+    position: relative;
+    top: 20px;
+    animation: mymove 3s infinite;
+    
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3), 8px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+    animation-play-state: paused;
+}
+
+.profile img {
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    left: 33px;
+}
+/*
+.circle {
+    height: 90px;
+    width: 110px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+    left: 41px;
+}
+*/
+.profile h4 {
+    margin-top: 160px;
+}
+
+.profile p {
+    font-size: 10px;
+    margin-top: 3px;
+    opacity: 0.7;
+}
+
+.instagram img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+
+.github img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+#member1 {animation-timing-function: linear;}
+#member2 {animation-timing-function: ease;}
+#member3 {animation-timing-function: ease-in;}
+#member4 {animation-timing-function: ease-out;}
+#member5 {animation-timing-function: ease-in-out;}
+  
+@keyframes mymove {
+    from {top: 60px;}
+    to {top: -10px;}
+}
+
+footer {
+    background-color: #E5E5E5;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+footer h6 {
+    font-weight: 400;
+    padding: 10px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Respnsive Breakpoint */
+@media (max-width:1000px) {
+    nav ul {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width:670px) {
+    nav ul {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    
+}
