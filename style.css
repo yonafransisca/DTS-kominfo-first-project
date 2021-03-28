@@ -75,12 +75,12 @@ nav ul li:hover {
 }
 
 .main-image {
-    width: 75%;
+    width: 65%;
     margin-top: 150px;
     display: block;
     position: absolute;
-    top: 50px;
-    left: 180px;
+    top: 70px;
+    left: 220px;
     z-index: -5;
 }
 
