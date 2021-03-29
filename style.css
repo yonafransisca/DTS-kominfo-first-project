@@ -141,7 +141,8 @@ nav ul li:hover {
 }
 
 .main-image {
-    width: 80%;
+    margin-top: 30px;
+    width: 70%;
 }
 
 .main {
